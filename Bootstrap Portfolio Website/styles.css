@@ -1,0 +1,92 @@
+/* Reset some Bootstrap styles and apply custom fonts */
+body, h1, h2, h3, p {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Make the navbar more minimalist */
+.navbar {
+  background-color: #fff; /* or any light shade you prefer */
+  box-shadow: none;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #555;
+  font-weight: bold;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #000;
+}
+
+/* Adjust the container padding and margins */
+.container {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+/* Typography styles for the header */
+header h1 {
+  font-size: 3rem; /* Larger font size for the main title */
+  color: #333;
+}
+
+header p.lead {
+  font-size: 1.25rem;
+  color: #666;
+}
+
+/* Style the projects and skills section */
+#projects h3, #skills h3 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.card {
+  border: none;
+  transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+}
+
+.card-title {
+  font-size: 1.5rem;
+}
+
+.card-body {
+  padding: 2rem;
+}
+
+/* Style the footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem 0;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Add custom styles for large screens */
+@media (min-width: 992px) {
+  header h1 {
+    font-size: 4rem;
+  }
+  
+  header p.lead {
+    font-size: 1.5rem;
+  }
+
+  .card-body {
+    padding: 3rem;
+  }
+}

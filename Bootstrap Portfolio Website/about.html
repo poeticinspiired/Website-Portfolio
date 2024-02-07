@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Abdurahman's Portfolio showcasing projects and skills in software engineering, web development, and more.">
+<meta name="keywords" content="Abdurahman, Portfolio, Software Engineering, Web Development, Data Science">
+<meta name="author" content="Abdurahman">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css"> <!-- Custom CSS -->
+  <title>Portfolio - Abdurahman</title>
+</head>
+<body>
+  <div class="container mt-5" id="home"> <!-- Added ID for navigation -->
+    <header>
+        <div class="container mt-5">
+          <h1>Welcome, I'm Abdurahman!</h1>
+          <p>A passionate Software Engineering Student dedicated to programming, web development, data science, cloud computing, and customer management.</p>
+        </div>
+    </header>
+    <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light mt-4">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section id="projects" class="mt-4"> <!-- Added ID for navigation -->
+      <h3>Projects:</h3>
+      <div class="row">
+        <!-- Project cards... -->
+        <!-- Sudoku Solver Card -->
+<div class="card mb-3">
+    <div class="card-body">
+      <h4 class="card-title">Sudoku Solver</h4>
+      <p class="card-text">I developed a Sudoku Solver in Java, utilizing a backtracking algorithm. This project highlighted my problem-solving abilities and coding expertise, essential for my co-op aspirations.</p>      <!-- Trigger button for Sudoku Solver Modal -->
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#sudokuSolverModal">
+        Learn More
+      </button>
+    </div>
+  </div>
+  
+  <!-- Flask API Card -->
+  <div class="card mb-3">
+    <div class="card-body">
+      <h4 class="card-title">Flask API for User Data Retrieval</h4>
+      <p class="card-text">Created a Flask API for user data retrieval, demonstrating skills in routing and API design.</p>
+      <!-- Trigger button for Flask API Modal -->
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#flaskApiModal">
+        Learn More
+      </button>
+    </div>
+  </div>
+<!-- Sudoku Solver Modal -->
+<div class="modal fade" id="sudokuSolverModal" tabindex="-1" aria-labelledby="sudokuSolverModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="sudokuSolverModalLabel">Sudoku Solver</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+<p>The Sudoku Solver project was an engaging endeavor designed to tackle the intricate puzzle of Sudoku using computational methods. The primary goal was to create a software application capable of solving any given Sudoku puzzle, regardless of its difficulty level. This project not only served as a testament to my programming skills but also honed my problem-solving abilities, crucial for my career development, especially as I sought co-op opportunities. Below is a detailed overview of the project, including the technologies used, challenges faced, and the strategies employed to overcome these obstacles.
+
+    Technologies Used
+    Java: The project was developed in Java, chosen for its object-oriented features, portability across platforms, and extensive standard libraries which facilitated the development process.
+    Eclipse IDE: For writing and debugging the code, Eclipse IDE was used, providing a robust environment for Java development with features like code completion and easy management of project files.
+    Git: Version control was handled using Git, allowing for efficient tracking of changes and collaboration with peers, crucial for maintaining the integrity of the project's codebase.
+    Challenges Faced
+    Algorithm Design: The core challenge was devising an algorithm that could solve Sudoku puzzles efficiently. The brute-force method was initially considered but quickly deemed impractical for harder puzzles due to its computational intensity.
+    
+    Optimization: Making the solver both fast and efficient for all levels of Sudoku puzzles presented a significant challenge. It required careful consideration of algorithmic efficiency and memory usage.
+    
+    Usability: Ensuring the software was user-friendly and could be easily operated by individuals without technical backgrounds was another hurdle. This involved designing a straightforward interface and clear output formats for solved puzzles.
+    
+    Overcoming Challenges
+    Backtracking Algorithm: The decision to implement a backtracking algorithm was pivotal. This approach systematically explores possible solutions, backtracking whenever it encounters a dead end. It proved effective for solving puzzles of any difficulty by efficiently navigating the solution space.
+    
+    Code Optimization: To enhance performance, I focused on optimizing the backtracking algorithm, including implementing strategies to minimize unnecessary checks and recursive calls. Techniques such as checking for the most constrained cells first (those with the fewest possible values) helped in significantly reducing the search space.
+    
+    Interface Design: Although the primary focus was on the backend logic, basic efforts were made to make the application user-friendly. The solver was designed to accept puzzles in a simple text format and display solutions directly to the console, ensuring ease of use while maintaining the focus on the algorithm's effectiveness.
+    
+    Conclusion
+    The development of the Java Sudoku Solver was a comprehensive project that tested my abilities in algorithmic problem solving, software optimization, and user-centric design. Facing and overcoming challenges such as algorithm efficiency and software usability were instrumental in enhancing my programming and analytical skills. This project, a blend of technical rigor and practical application, stands as a significant achievement in my portfolio, especially as I seek to demonstrate my capabilities in a co-op setting.</p>        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <a href="#" class="btn btn-primary">View Project</a> <!-- Replace "#" with the actual project link -->
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Flask API Modal -->
+  <div class="modal fade" id="flaskApiModal" tabindex="-1" aria-labelledby="flaskApiModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="flaskApiModalLabel">Flask API for User Data Retrieval</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+<p> </p>The Flask API project was an initiative to design and implement a RESTful API service using Flask, a micro web framework written in Python known for its simplicity and flexibility. The project's objective was to provide a lightweight, scalable solution for handling HTTP requests and serving data to clients in a secure and efficient manner. This API was intended to serve as a backend for a web application, managing user data, processing requests, and interacting with a database. Here's a detailed overview of the project, highlighting the API's design, the data it manages, and the security measures implemented.
+
+API Design and Technologies Used
+Flask: The core of the project, Flask was used to set up the API routes and handlers. Flask's minimalistic yet extensible architecture allowed for the creation of a clean, maintainable codebase.
+SQLAlchemy: For database interactions, SQLAlchemy, an ORM (Object-Relational Mapping) library for Python, was employed. This facilitated secure and efficient queries to a relational database, abstracting the complexities of raw SQL.
+Marshmallow: To serialize and deserialize data objects, Marshmallow was used. This ensured that data exchanged between the client and server was correctly formatted and validated.
+Flask-RESTful: An extension for Flask, Flask-RESTful, was utilized to simplify the creation of RESTful APIs by providing resourceful routing and request parsing.
+Data Handling
+The API was designed to manage user data, including but not limited to user profiles, authentication details, and application-specific data such as user-generated content or settings. The data model was carefully designed to ensure data integrity and to facilitate easy access and manipulation of data. Key considerations included:
+
+Data Modeling: Entities and their relationships were modeled to reflect the application's real-world scenarios accurately. This involved defining models for users, posts, comments, and any other relevant entities.
+Validation: Data validation was critical to ensure that only well-formed data was accepted by the API. Marshmallow schemas were used to validate request data against the defined models, providing an additional layer of security and data integrity.
+Serialization: Marshmallow was also used for serialization, converting complex data types, such as objects from SQLAlchemy queries, into JSON format for easy consumption by clients.
+Security Measures
+Security was a paramount concern throughout the development of the Flask API project. Several measures were implemented to safeguard the API and the data it handles:
+
+Authentication and Authorization: The Flask-JWT-Extended extension was integrated to handle user authentication and token-based authorization. This ensured that only authenticated users could access certain endpoints, and users could only access data they were authorized to view or manipulate.
+SQL Injection Protection: By using SQLAlchemy for database interactions, the API was protected against SQL injection attacks. SQLAlchemy automatically escapes SQL statements, preventing attackers from injecting malicious code.
+Data Encryption: Sensitive data, such as passwords, were encrypted using industry-standard algorithms before being stored in the database. This protected user data even in the event of a data breach.
+Rate Limiting: To prevent abuse and ensure the API remained available to all users, rate limiting was implemented using Flask-Limiter. This limited the number of requests a user could make to the API within a given timeframe.
+Conclusion
+The Flask API project was a comprehensive exercise in designing and implementing a secure, efficient, and scalable web service. Through careful planning and the judicious use of technologies and best practices, the project successfully demonstrated how Flask can be leveraged to create powerful APIs. The experience gained in data handling, security, and API design principles not only showcased technical proficiency but also provided invaluable insights into developing secure, robust web services.</p>        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <a href="#" class="btn btn-primary">View Project</a> <!-- Replace "#" with the actual project link -->
+        </div>
+      </div>
+    </div>
+  </div>
+    
+    </section>
+
+    <section id="skills" class="mt-4"> <!-- Added ID for navigation -->
+      <h3>Skills</h3>
+      <div class="row">
+        <!-- Skills cards...-->
+        <div class="row">
+            <div class="col-md-6">
+              <div class="card mb-3">
+                <div class="card-body">
+                  <h4 class="card-title">Front End</h4>
+                  <ul class="list-unstyled">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Bootstrap</li>
+                    <li>JavaScript (JS)</li>
+                    <li>React</li>
+                    <li>Angular</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card mb-3">
+                <div class="card-body">
+                  <h4 class="card-title">Back End</h4>
+                  <ul class="list-unstyled">
+                    <li>Node.js</li>
+                    <li>Express</li>
+                    <li>MongoDB</li>
+                    <li>SQL</li>
+                    <li>Python</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+      </div>
+      </div>
+    </section>
+
+    <!-- Additional sections... -->
+
+    <footer class="text-center mt-4 py-4">
+      <p>&copy; 2024 Abdurahman's Portfolio</p>
+      <a href="#home">Back to Top</a>
+      <!-- Social media links can be added here -->
+    </footer>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script>
+    // Smooth scrolling for links with hashes
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+          document.querySelector(this.getAttribute('href')).scrollIntoView({
+              behavior: 'smooth'
+          });
+      });
+    });
+  </script>
+</body>
+</html>
